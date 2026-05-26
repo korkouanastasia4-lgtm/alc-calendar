@@ -1,5 +1,7 @@
-import Page from '../app/page.jsx'
-
 export default function App() {
-  return <Page />
+  return (
+    <div>
+      ALC Calendar is LIVE ✅
+    </div>
+  )
 }
