@@ -1,7 +1,7 @@
 export default function App() {
   return (
-    <h1 style={{ padding: 20 }}>
-      ALC Calendar WORKS ✅
-    </h1>
+    <div style={{ padding: 20, fontFamily: 'Arial' }}>
+      <h1>ALC Calendar is LIVE ✅</h1>
+    </div>
   )
 }
