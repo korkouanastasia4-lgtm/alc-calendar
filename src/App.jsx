@@ -1,23 +1,22 @@
 function App() {
   return (
-    <div style={{ textAlign: "center", paddingTop: "40px" }}>
-      
-      <img
-        src="/logo.png"
-        alt="ALC Logo"
-        style={{ width: "180px", marginBottom: "20px" }}
-      />
+    <div>
 
-      <h1>ALC Calendar is LIVE ✅</h1>
-
-      <div style={{
-        marginTop: "30px",
+      {/* HEADER */}
+      <header style={{
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
         padding: "20px",
-        border: "1px solid #ddd",
-        borderRadius: "10px",
-        display: "inline-block"
+        gap: "15px"
       }}>
-        <h2>Welcome 👋</h2>
+        <img src="/logo.png" style={{ width: "80px" }} />
+        <h2>ALC Calendar</h2>
+      </header>
+
+      {/* STATUS */}
+      <div style={{ textAlign: "center", marginTop: "30px" }}>
+        <h1>ALC Calendar is LIVE ✅</h1>
         <p>System is running correctly</p>
       </div>
 
