@@ -7,21 +7,13 @@ export default function App() {
   return (
     <div style={styles.container}>
       
-      {/* LOGO */}
-      <img
-        src="/logo.png"
-        alt="ALC Logo"
-        style={styles.logo}
-      />
+      <img src="/logo.png" alt="ALC Logo" style={styles.logo} />
 
-      {/* TITLE */}
       <h1 style={styles.title}>
         ALC Calendar is LIVE ✅
       </h1>
 
-      {/* MAIN BOX */}
       <div style={styles.card}>
-        
         {!user ? (
           <Login onLogin={(userData) => setUser(userData)} />
         ) : (
@@ -30,7 +22,6 @@ export default function App() {
             <p>System is running correctly</p>
           </>
         )}
-
       </div>
     </div>
   );
