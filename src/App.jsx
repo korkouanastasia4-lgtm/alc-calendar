@@ -14,7 +14,7 @@ export default function App() {
     <div style={{ textAlign: "center", padding: 30 }}>
       <img src={logo} alt="logo" style={{ width: 120 }} />
 
-      <h1>ALC Calendar ✅</h1>
+      <h1>ALC Calendar is LIVE ✅</h1>
 
       <p>Logged in as: {user.email}</p>
 
