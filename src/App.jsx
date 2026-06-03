@@ -1,58 +1,28 @@
-import { useState } from "react";
-
 function App() {
   return (
-    <div style={styles.container}>
+    <div style={{ textAlign: "center", paddingTop: "40px" }}>
       
-      {/* LOGO */}
       <img
         src="/logo.png"
         alt="ALC Logo"
-        style={styles.logo}
+        style={{ width: "180px", marginBottom: "20px" }}
       />
 
-      {/* TITLE */}
-      <h1 style={styles.title}>
-        ALC Calendar is LIVE ✅
-      </h1>
+      <h1>ALC Calendar is LIVE ✅</h1>
 
-      {/* SIMPLE CARD (test UI) */}
-      <div style={styles.card}>
+      <div style={{
+        marginTop: "30px",
+        padding: "20px",
+        border: "1px solid #ddd",
+        borderRadius: "10px",
+        display: "inline-block"
+      }}>
         <h2>Welcome 👋</h2>
         <p>System is running correctly</p>
       </div>
 
     </div>
-  );
+  )
 }
 
-const styles = {
-  container: {
-    display: "flex",
-    flexDirection: "column",
-    alignItems: "center",
-    justifyContent: "center",
-    minHeight: "100vh",
-    backgroundColor: "#ffffff",
-    fontFamily: "Arial",
-  },
-
-  logo: {
-    width: "180px",
-    marginBottom: "20px",
-  },
-
-  title: {
-    fontSize: "28px",
-    fontWeight: "bold",
-  },
-
-  card: {
-    marginTop: "30px",
-    padding: "20px",
-    border: "1px solid #ddd",
-    borderRadius: "10px",
-  },
-};
-
-export default App;
+export default App
