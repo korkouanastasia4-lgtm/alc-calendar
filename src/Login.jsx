@@ -4,7 +4,7 @@ import { supabase } from "./lib/supabase";
 export default function Login({ onLogin }) {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [mode, setMode] = useState("login"); // login / register
+  const [mode, setMode] = useState("login");
 
   const handleAuth = async () => {
     if (mode === "login") {
@@ -31,10 +31,11 @@ export default function Login({ onLogin }) {
 
   return (
     <div style={{ textAlign: "center", marginTop: 100 }}>
-      <h2>{mode === "login" ? "Login" : "Register"} ALC Calendar</h2>
+      <h2>{mode === "login" ? "Login" : "Register"}</h2>
 
       <input
         placeholder="Email"
+        value={email}
         onChange={(e) => setEmail(e.target.value)}
         style={{ display: "block", margin: "10px auto", padding: 10 }}
       />
@@ -42,6 +43,7 @@ export default function Login({ onLogin }) {
       <input
         type="password"
         placeholder="Password"
+        value={password}
         onChange={(e) => setPassword(e.target.value)}
         style={{ display: "block", margin: "10px auto", padding: 10 }}
       />
@@ -54,7 +56,7 @@ export default function Login({ onLogin }) {
         style={{ cursor: "pointer", marginTop: 20 }}
         onClick={() => setMode(mode === "login" ? "register" : "login")}
       >
-        Switch to {mode === "login" ? "Register" : "Login"}
+        Switch mode
       </p>
     </div>
   );
